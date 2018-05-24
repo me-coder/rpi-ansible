@@ -1,0 +1,26 @@
+---
+- hosts: rpi
+  remote_user: pi
+       
+  tasks:
+  - name: reboot
+    shell: sleep 2 && /sbin/shutdown -r now  
+    async: 1
+    poll: 0
+    ignore_errors: true
+    become: yes
+    become_method: sudo
+    notify:
+    - waiting for server to come back
+
+  handlers:
+  - name: waiting for server to come back
+    local_action: 
+      module: wait_for
+        host={{ inventory_hostname }}
+        port=22
+        state=started
+        delay=1
+        timeout=300
+    become: no
+

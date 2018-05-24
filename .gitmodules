@@ -1,0 +1,6 @@
+[submodule "setup_rpi"]
+	path = setup_rpi
+	url = https://github.com/provisioning-tools/setup-rpi.git
+[submodule "bluetooth"]
+	path = bluetooth
+	url = /home/yashodhan/Projects/ansible/rpi/bluetooth

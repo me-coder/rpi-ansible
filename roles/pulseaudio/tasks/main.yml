@@ -1,0 +1,4 @@
+---
+- include: ../setup_rpi/tasks/update.yml
+- include: install.yml
+

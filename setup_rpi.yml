@@ -1,0 +1,6 @@
+---
+- hosts: rpi
+  remote_user: pi
+  roles:
+    - setup_rpi
+
