@@ -4,4 +4,7 @@
 [submodule "bluetooth"]
 	path = roles/bluetooth
   url = https://github.com/provisioning-tools/bluetooth.git 
+[submodule "pulseaudio"]
+	path = roles/pulseaudio
+  url = https://github.com/provisioning-tools/pulseaudio.git 
 
