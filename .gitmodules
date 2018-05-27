@@ -2,10 +2,6 @@
 	path = roles/setup-rpi
 	url = https://github.com/provisioning-tools/setup-rpi.git
 
-[submodule "roles/bluetooth"]
-	path = roles/bluetooth
-  url = https://github.com/provisioning-tools/bluetooth.git 
-
 [submodule "roles/pulseaudio"]
 	path = roles/pulseaudio
 	url = https://github.com/provisioning-tools/pulseaudio.git
