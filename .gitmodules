@@ -6,3 +6,6 @@
 	path = roles/pulseaudio
 	url = https://github.com/provisioning-tools/pulseaudio.git
 
+[submodule "roles/bluetooth"]
+	path = roles/bluetooth
+	url = https://github.com/provisioning-tools/bluetooth.git
