@@ -1,5 +1,5 @@
 [submodule "setupr-rpi"]
-	path = roles/setup_rpi
+	path = roles/setup-rpi
 	url = https://github.com/provisioning-tools/setup-rpi.git
 [submodule "bluetooth"]
 	path = roles/bluetooth
