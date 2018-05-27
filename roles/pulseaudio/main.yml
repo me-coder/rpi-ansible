@@ -1,9 +1,0 @@
----
-- hosts: rpi
-  remote_user: pi
-  become: yes
-  become_method: sudo
-       
-  roles:
-    - role: pulseaudio
-
