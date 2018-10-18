@@ -5,5 +5,5 @@
   become_method: sudo
 
   roles:
-    - setup_rpi
+    - setup-rpi
 
