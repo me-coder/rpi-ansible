@@ -1,0 +1,12 @@
+---
+- name: Resize OS partition
+  when: ansible_os_family == "Debian"
+  become: yes
+  become_method: sudo
+  script: "{{ role_path }}/files/check_and_expand_partition.sh"
+  args:
+    chdir: "/tmp"
+  notify:
+    - reboot
+    - waiting for server to come back
+

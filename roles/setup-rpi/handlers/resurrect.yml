@@ -1,0 +1,9 @@
+---
+- name: waiting for server to come back 
+  become: false
+  wait_for_connection:
+    delay: 60
+    sleep: 5
+    connection_timeout: 10
+    timeout: 600
+ 

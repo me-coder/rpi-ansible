@@ -1,0 +1,11 @@
+---
+- name: Set default gateway
+  when: ansible_os_family == "Debian"
+  command: "route add default gw {{default_gateway_ip}}"
+  ignore_errors: yes
+  become: yes
+  become_method: sudo
+  notify:
+    - reboot
+    - waiting for server to come back
+

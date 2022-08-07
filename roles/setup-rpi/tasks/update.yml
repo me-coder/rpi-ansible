@@ -1,0 +1,12 @@
+---
+- name: Update Packages
+  apt:
+    update_cache: yes
+    cache_valid_time: 14400
+  when: ansible_pkg_mgr == 'apt'
+  async: 900
+  poll: 5
+  become: true
+  become_method: sudo
+  register: apt_updated
+  

@@ -1,0 +1,7 @@
+---
+- name: shutdown
+  shell: sync && /sbin/shutdown -P now
+  when: ansible_os_family == "Debian"
+  become: yes
+  become_method: sudo
+

@@ -1,0 +1,5 @@
+---
+- include: reboot.yml
+- include: shutdown.yml
+- include: resurrect.yml
+

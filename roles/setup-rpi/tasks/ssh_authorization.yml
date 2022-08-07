@@ -1,0 +1,10 @@
+---
+- name: SSH Authenticate
+  become: false
+  authorized_key:
+    user: pi
+    state: present
+    manage_dir: yes
+    key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"
+    exclusive: yes
+

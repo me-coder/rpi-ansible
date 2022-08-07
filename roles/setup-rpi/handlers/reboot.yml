@@ -1,0 +1,9 @@
+---
+- name: reboot
+  shell: "sync && sleep 2 && /sbin/shutdown -r now"
+  async: 1
+  poll: 0
+  become: true
+  become_method: sudo
+  ignore_errors: true
+

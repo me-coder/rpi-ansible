@@ -1,0 +1,10 @@
+---
+
+- import_tasks: ssh_authorization.yml
+- import_tasks: add_default_gateway.yml
+- import_tasks: update.yml
+- import_tasks: upgrade.yml
+- import_tasks: install_essentials.yml
+- import_tasks: clean_up.yml
+- import_tasks: disk_resize.yml
+  

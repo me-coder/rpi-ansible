@@ -1,0 +1,7 @@
+---
+# file: roles/setup_rpi/defaults/main.yml
+# if not overridden in inventory or as a parameter, this is the value that will be used
+
+# variable for default gateway ip
+default_gateway_ip: 10.42.0.1
+
